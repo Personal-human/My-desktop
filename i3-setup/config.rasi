@@ -1,18 +1,23 @@
+@theme "/dev/null"
+
 configuration {
-	display-drun: "Applications: ";
-	display-window: "Windows: ";
+text-color: #00bbff; 
+	display-drun: " Applications:";
+	display-window: " Windows:";
+	display-run: " run:";
 	drun-display-format: "{icon} {name}";
 	modi: "window,run,drun";
 	show-icons: true;
 	icon-theme: "Papirus";
 }
 
-@theme "/dev/null"
+
 
 * {
 bg: #1c1c1c ;
 main-text: #00bbff;
 fg:#21a821 ;
+text-color: @main-text;
 
 
 background-color: @bg;
@@ -24,6 +29,8 @@ background-color: @bg;
 window {
 	width: 20%;
 	height: 20%;
+	border: 10;
+	border-color: @main-text;
 }
 
 element {
@@ -44,4 +51,5 @@ vertical-align: 20;
 element-icon {
 size: 30;
 }
+
 
